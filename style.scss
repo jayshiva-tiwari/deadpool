@@ -9,13 +9,77 @@ HTML,body{
     width: 100%;
 }
 
+@mixin flex-center($justify:center,$align:center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 main{
     height: 100%;
-    width: 100%;
-    display: flex;
-    
-    .nav{
-        text-decoration: none;
+    width: 100vw;
+    background: #000;
+    padding: 3vw;
+    nav{
+        @include flex-center(space-between,center);
+        height: 4vw;
+        color: #fff;
+        .logo{
+            font-size: 1.5vw;
+            font-weight: bold;
+            font-family: proxyn;
+            @include flex-center();
+            img{
+                height: 2.5vw;
+                width: 2.5vw;
+            }
+        }
+        .links{
+            @include flex-center(space-between,center);
+            font-size: 1.2vw;
+            // gap: 3vw;
+            p{
+                text-decoration: none;
+                cursor: pointer;
+                @include flex-center();
+                color: #fff;
+                font-weight: 100;
+                border-right: 3px solid #fff;
+                height: 0.2vw;
+                padding: 0 2vw 0 2vw;
+                border-radius: 0%;
+                font-family: 'Poppins',sans-serif;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: #f00;
+                }
+            }
+            & p:last-child{
+                border: none;
+            }
+        }
+        aside{
+            @include flex-center();
+            gap: 1vw;
+            .icon{
+                border: 1px solid #fff;
+                border-radius: 50%;
+                padding: 10px;
+                i{
+                    font-size: 1.5vw;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        color: #f00;
+                    }
+                }
+            }
+            #menu{
+                background: #ffffff;
+                color: #000;
+            }
+            
+        }
     }
 
 }

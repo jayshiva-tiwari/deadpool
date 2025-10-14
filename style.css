@@ -11,9 +11,76 @@ HTML, body {
 
 main {
   height: 100%;
-  width: 100%;
-  display: flex;
+  width: 100vw;
+  background: #000;
+  padding: 3vw;
 }
-main .nav {
+main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4vw;
+  color: #fff;
+}
+main nav .logo {
+  font-size: 1.5vw;
+  font-weight: bold;
+  font-family: proxyn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main nav .logo img {
+  height: 2.5vw;
+  width: 2.5vw;
+}
+main nav .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2vw;
+}
+main nav .links p {
   text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 100;
+  border-right: 3px solid #fff;
+  height: 0.2vw;
+  padding: 0 2vw 0 2vw;
+  border-radius: 0%;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+main nav .links p:hover {
+  color: #f00;
+}
+main nav .links p:last-child {
+  border: none;
+}
+main nav aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+main nav aside .icon {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+main nav aside .icon i {
+  font-size: 1.5vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+main nav aside .icon i:hover {
+  color: #f00;
+}
+main nav aside #menu {
+  background: #ffffff;
+  color: #000;
 }/*# sourceMappingURL=style.css.map */
