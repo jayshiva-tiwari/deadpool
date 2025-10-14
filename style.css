@@ -117,6 +117,24 @@ main nav aside #menu {
   background: #ffffff;
   color: #000;
 }
+main .firstsection {
+  color: #fff;
+}
+main .firstsection .up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .firstsection .up div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+}
+main .firstsection .up p {
+  border: white 1px solid;
+  padding: -10px;
+}
 
 @keyframes search-anime {
   0% {

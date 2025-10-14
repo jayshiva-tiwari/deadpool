@@ -107,8 +107,30 @@ main{
             #menu{
                 background: #ffffff;
                 color: #000;
+                
             }
         }
+    }
+    .firstsection{
+        color: #fff;
+        .up{
+            div{
+                @include flex-center(space-between,center);
+                gap: 2vw;
+                
+            }
+            
+            @include flex-center(space-between,center);
+            p{
+                 border: white 1px solid;
+                 padding: -10px;
+                 
+
+            }
+           
+        }
+
+
     }
 }
 
