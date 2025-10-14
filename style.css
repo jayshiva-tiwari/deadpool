@@ -21,6 +21,7 @@ main nav {
   align-items: center;
   height: 4vw;
   color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 main nav .logo {
   font-size: 1.5vw;
@@ -71,16 +72,61 @@ main nav aside .icon {
   border: 1px solid #fff;
   border-radius: 50%;
   padding: 10px;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+main nav aside .icon:hover {
+  background: #ffffff;
+  color: #000;
 }
 main nav aside .icon i {
   font-size: 1.5vw;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-main nav aside .icon i:hover {
-  color: #f00;
+main nav aside #search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  transition: all 0.3s ease-in-out;
+}
+main nav aside #search input {
+  width: 0vw;
+  height: 0vw;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #000000;
+  font-size: 1.5vw;
+  transition: all 0.3s ease-in-out;
+}
+main nav aside #search:hover {
+  border-radius: 20px;
+  animation-name: search-anime;
+  animation-iteration-count: 1;
+}
+main nav aside #search:hover input {
+  width: 10vw;
+  height: 2vw;
+  padding: 0 10px 0 10px;
+  color: #000000;
 }
 main nav aside #menu {
   background: #ffffff;
   color: #000;
+}
+
+@keyframes search-anime {
+  0% {
+    width: 0vw;
+    border: none;
+    border-radius: 20px;
+  }
+  100% {
+    width: 14vw;
+    border: none;
+    border-radius: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
